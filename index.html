@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-circle-progress/dist/circle-progress.min.js" type="module"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('dETSwMAr-CgYrve8F');
+        })();
+    </script>
+<link rel="stylesheet" href="sweetalert2.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="nav">
+            <div class="nav_box1">
+                <!-- <img class="nav_img" src="" alt=""> -->
+                <p class="nav_text">Yelyzaveta Sedelnikova</p>
+            </div>
+            <div class="nav_box2">
+                <a class="nav_text nav_a" href="#home">Home</a>
+                <a class="nav_text nav_a" href="#about">About</a>
+                <a class="nav_text nav_a" href="#projects">Projects</a>
+                <a class="nav_text nav_a" href="#contact">Contact</a>
+            </div>
+        </div>
+
+        <div class="header" id="home">
+            <h1 class="header_headline">Hi, I`m Eliza</h1>
+            <p class="header_text">A novice web developer focused on results, learning the creation and management of websites <br> and web applications with the aim of achieving success in their endeavors.</p>
+            <a href="#projects"><button class="header_btn">Projects</button></a>
+        </div>
+        <div class="section_aboutMe" id="about">
+            <div class="aboutText">
+                <h1 class="headline">ABOUT ME</h1>
+            <p class="cont_text">Here you'll discover more about me, what I do, and my current skills</p>
+            </div>
+            <div class="getToKnow">
+                <h2>Get to know me!</h2>
+                <p>My name is Yelyzaveta, and I am a beginner web developer with a strong interest in creating modern and functional websites. Although my career is just starting, I have already acquired solid knowledge and skills necessary for developing web applications.</p>
+                <p class="delete">I am constantly striving for professional growth and expanding my knowledge. Currently, I am actively studying JavaScript to improve my skills and become a more in-demand specialist.</p>
+                <p>In my free time, I participate in online courses and webinars, read industry articles, and experiment with new technologies. My goal is to become a full-fledged web developer capable of creating complex and efficient web applications.</p>
+                <a href="#contact"><button class="contact">Contact</button></a>
+            </div>
+            <div class="skills">
+                <h2>My Skills</h2>
+                <div class="html">
+                    <div id="html" class="skill ">HTML</div>
+                    <circle-progress class="html_circle" value="80" max="100" text-format="percent"> </circle-progress>
+                </div>
+                <div class="html">
+                    <div  class="skill css">CSS</div>
+                    <circle-progress class="html_circle" value="80" max="100" text-format="percent"> </circle-progress>
+                </div>
+                <div class="html">
+                    <div  class="skill js">Java Script</div>
+                    <circle-progress class="html_circle" value="55" max="100" text-format="percent"> </circle-progress>
+                </div>
+                <div class="html">
+                    <div  class="skill react">React</div>
+                    <circle-progress class="html_circle" value="25" max="100" text-format="percent"> </circle-progress>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="projects_section" id="projects">
+            <div class="text_box">
+                <h1 class="headline">PROJECTS</h1>
+                <p class="cont_text">Here you will see some of my own projects that I did during my studies</p>
+            </div>
+            <div class="project_box">
+                <img class="projects_img" src="img/project1.PNG" alt="">
+                <div class="project_textbox">
+                    <h2>АН-255 "Мрія"</h2>
+                    <p>The page is dedicated to the Ukrainian cargo plane "Mriya" An-225. It features a brief history of the aircraft's creation, its technical specifications, records, and unique capabilities. The site also provides information about the chief designer and interesting facts about the plane. </p>
+                    <a href="https://hcnaed.github.io/aaa/"><button class="view">view</button></a>
+                </div>
+            </div>
+            <div class="project_box">
+                <img class="projects_img" src="img/project2.PNG" alt="">
+                <div class="project_textbox">
+                    <h2>Клавіатурний Тренажер</h2>
+                    <p>The page is a typing tutor for children. It offers interactive exercises to help kids improve their typing skills in a fun and engaging way. The tutor includes various levels and activities designed to enhance typing speed and accuracy, making the learning process enjoyable for young users. </p>
+                    <a href="https://hcnaed.github.io/bbb/"><button class="view">view</button></a>
+                </div>
+            </div>
+        </div>
+
+            <div class="section_contact" id="contact">
+                <div class="cont_box">
+                    <h1 class="headline">CONTACT</h1>
+                    <p class="cont_text">Please feel free to reach out to me</p>
+                    <form id="contact-form" class="contact_box">
+                        <input type="hidden" name="contact_number" id="">
+                        <div class="input_box">
+                            <label for="">Name</label>
+                            <input name="from_name" placeholder="Enter Your Name" class="name" type="text">
+                        </div>
+                        <div class="input_box">
+                            <label for="">Email</label>
+                            <input name="email" placeholder="Enter Your Email" class="mail" type="text">
+                        </div>
+                        <div class="input_box">
+                            <label for="">Message</label>
+                            <input name="message" placeholder="Enter Your Message" class="mess" type="text" name="" id="">
+                        </div>
+                        <div class="button_box">
+                            <input onclick="fun1()" class="send_btn" type="submit" value="send" name="" id="">
+                        </div>
+                    </form>
+                </div>
+                
+            </div>
+            <!-- <div class="footer">
+                <div class="footer_box1">
+                    <h2 class="footer_text">Yelyzaveta Sedelnikova</h2>
+                </div>
+                <div class="footer_box2">
+                    <h2 class="footer_text">Social</h2>
+                    <div class="social_box">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    <script src="script.js"></script>
+    <script src="sweetalert2.all.min"></script>
+</body>
+</html>
